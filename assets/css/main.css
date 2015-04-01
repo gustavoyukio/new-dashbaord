@@ -1,0 +1,10 @@
+/*
+ * Header
+ */
+
+ .headerlista {
+    text-align: right;
+ }
+ .headerlista li{
+    display: inline-block;
+ }
