@@ -1,10 +1,83 @@
+.active {
+    display: block;
+}
 /*
  * Header
  */
+ header {
+    border-bottom: 1px solid #dcdcdc;
+ }
 
  .headerlista {
     text-align: right;
  }
  .headerlista li{
     display: inline-block;
+ }
+
+/*
+ * Quick Nav
+ */
+ .nav-quick {
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ #main {
+    clear: both;
+ }
+
+/*
+ * Aside
+ */
+ aside,
+ .main {
+    display: inline-block;
+    vertical-align: top;
+ }
+
+ aside {
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    width: 15%;
+ }
+ aside form {
+    text-align: center;
+    padding: 10px 0;
+ }
+ aside form input{
+    width: 90%;
+ }
+ aside ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+ aside ul li h4 {
+    padding: 0;
+    margin: 0;
+ }
+ aside ul li {
+    border-top: 1px solid #dcdcdc;
+ }
+ aside ul li a{
+    display: block;
+    padding: 10px 0;
+ }
+ aside h4 a i {
+    margin: 0 10px;
+    vertical-align: text-top;
+ }
+ aside ul li ul {
+    display: none;
+ }
+ aside ul li ul li{
+    border-top: 1px solid #e9e9e9;
+ }
+/*
+ * main
+ */
+ .main {
+    width: 84%;
+    padding: 20px 20px 0;
  }
