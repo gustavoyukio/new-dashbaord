@@ -1,83 +1,269 @@
 .active {
     display: block;
 }
+
 /*
  * Header
  */
- header {
-    border-bottom: 1px solid #dcdcdc;
- }
+header {
+    border-bottom: 1px solid #003A5B;
+    background: #438eb9;
+    height: 46px;
+}
+header h1 {
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 45px;
+}
 
- .headerlista {
+.headerlista {
     text-align: right;
- }
- .headerlista li{
+}
+
+.headerlista ul {
+    margin: 0;
+}
+
+.headerlista li {
     display: inline-block;
- }
+    line-height: 45px;
+    padding: 0 10px;
+    color: #fff;
+    border-right:1px solid #f8f8f8;
+    vertical-align: text-bottom;
+}
+.headerlista .grey {
+    background-color: #555555;
+    
+}
+.headerlista .purple {
+    background-color: #892e65;
+}
+.headerlista .green {
+    background-color: #2e8965;
+}
+.headerlista .blue {
+    background-color: #62a8d1;
+    line-height: 22px;
+    text-align: left;
+}
+.headerlista .blue .badge a{
+    color: #fff;
+    padding: 5px 10px;
+}
 
 /*
  * Quick Nav
  */
- .nav-quick {
+.nav-quick {
     margin-top: 20px;
     margin-bottom: 20px;
- }
+}
 
- #main {
+#main {
     clear: both;
- }
+    background-color: #f8f8f8;
+}
 
 /*
  * Aside
  */
- aside,
- .main {
+aside,
+.main {
     display: inline-block;
     vertical-align: top;
- }
+}
 
- aside {
+aside {
     border-right: 1px solid #dcdcdc;
     border-bottom: 1px solid #dcdcdc;
     width: 15%;
- }
- aside form {
+}
+aside h4 {
+    margin: 0;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: #FFFfff;
+    position: relative;
+}
+aside > h4:before {
+    position: absolute;
+    height: 100%;
+    content: " ";
+    right: 0;
+    width: 100%;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    border-right: 20px solid #438eb9; 
+}
+aside h4 a {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+}
+
+aside form {
     text-align: center;
     padding: 10px 0;
- }
- aside form input{
+}
+
+aside form input {
     width: 90%;
- }
- aside ul{
+}
+
+aside form input[type="text"] {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border:1px solid #adadad;
+    padding: 5px 10px;
+}
+aside form input[type="submit"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+aside ul {
     margin: 0;
     padding: 0;
     list-style: none;
- }
- aside ul li h4 {
+    background-color: #f8f8f8;
+}
+
+aside ul li h4 {
     padding: 0;
     margin: 0;
- }
- aside ul li {
+}
+
+aside ul li {
     border-top: 1px solid #dcdcdc;
- }
- aside ul li a{
+    border-left: 2px solid #f8f8f8;
+}
+aside ul li:hover {
+    background-color: #FFFfff;
+    border-left: 2px solid #9dbdd6;
+}
+aside ul li a {
     display: block;
     padding: 10px 0;
- }
- aside h4 a i {
+    color: #777777;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+aside h4 a i {
     margin: 0 10px;
     vertical-align: text-top;
- }
- aside ul li ul {
+}
+
+aside ul li ul {
     display: none;
- }
- aside ul li ul li{
-    border-top: 1px solid #e9e9e9;
- }
+}
+
+aside ul li .submenu li {
+    border-top: 1px dotted #9dbdd6;
+    padding-left: 35px;
+    position: relative;
+    background-color: #FFFfff;
+}
+
+aside ul  li .submenu li:before,
+aside ul  li .submenu li:after {
+    position: absolute;
+    left: 20px;
+    display: block;
+    content: " ";
+}
+
+aside ul  li .submenu li:before {
+    border-left: 1px dotted #9dbdd6;
+    height: 41px;
+
+}
+
+aside ul  li .submenu li:after {
+    width: 10px;
+    top: 19px;
+    border-top: 1px dotted #9dbdd6;
+}
+aside ul li .submenu li:hover {
+    background-color: #F1F9FF;
+}
+
+aside ul li .submenu li a{
+    font-weight: normal;
+    font-size: 13px;
+    color: #666666;
+    text-decoration: none;
+}
+aside ul li .submenu li a:hover{
+    color: #337ab7;
+}
 /*
  * main
  */
  .main {
     width: 84%;
     padding: 20px 20px 0;
+    background-color: #FFFfff;
+    border-left: 1px solid #dcdcdc;
  }
+
+ .main .alert {
+    clear: both;
+ }
+
+ /*
+  * Breadcrumb
+  */
+  .main .breadcrumb span{
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  .main .breadcrumb span h2 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+ /*
+  * Quick Links
+  */
+  .quick-links {
+    border:1px dotted #d8d8d8;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .quick-links ::before {
+    clear: both:
+    content:"* ";
+  }
+  .quick-links a {
+    display: inline-block;
+    width: 25%;
+    border-right: 1px dotted #d8d8d8;
+    height: 45px;
+    line-height: 45px;
+    color: #666666;
+  }
+  .quick-links a i {
+    color: #9dbdd6;
+  }
+
+ /*
+  * Paineis
+  */
+
+ .panel .glyphicon {
+    font-size: 36px;
+ }
+ /*
+  * Tables
+  */
+  .main table thead i {
+    color: #ff892a;
+    font-size: 16px;
+  }
+  .main table tbody .options a{
+    padding: 0 5px;
+  }
